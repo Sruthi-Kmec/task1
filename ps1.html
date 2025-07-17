@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>City Emergency Alert Dashboard</title>
+</head>
+<body>
+
+  <!-- Header with city name and alert level -->
+  <header>
+    <h1>Emergency Alert Dashboard - Metroville</h1>
+    <p>Current Alert Level:</p>
+    <meter value="7" min="0" max="10">7 out of 10</meter>
+  </header>
+
+  <!-- Main content: alerts and instructions -->
+  <main>
+    <section>
+      <h2>Recent Alerts</h2>
+
+      <article>
+        <header>
+          <h3>Flood Warning</h3>
+          <time datetime="2025-07-17T08:00">July 17, 2025 - 08:00 AM</time>
+          <p><strong>Category:</strong> Flood</p>
+        </header>
+        <p>Heavy rains have caused flooding in low-lying areas. Water levels are rising near the riverbanks.</p>
+        <section>
+          <h4>What To Do:</h4>
+          <ul>
+            <li>Stay indoors</li>
+            <li>Move to higher ground</li>
+            <li>Avoid low-lying areas</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>Air Quality Alert</h3>
+          <time datetime="2025-07-17T06:00">July 17, 2025 - 06:00 AM</time>
+          <p><strong>Category:</strong> Air Quality</p>
+        </header>
+        <p>Pollution levels have reached hazardous levels due to industrial smoke and vehicle emissions.</p>
+        <section>
+          <h4>What To Do:</h4>
+          <ul>
+            <li>Limit outdoor activities</li>
+            <li>Use masks when going outside</li>
+            <li>Keep windows closed</li>
+          </ul>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h3>Fire Risk Alert</h3>
+          <time datetime="2025-07-16T22:00">July 16, 2025 - 10:00 PM</time>
+          <p><strong>Category:</strong> Fire</p>
+        </header>
+        <p>Dry weather and strong winds increase the risk of wildfires in forest areas.</p>
+        <section>
+          <h4>What To Do:</h4>
+          <ul>
+            <li>Avoid lighting open fires</li>
+            <li>Report smoke sightings immediately</li>
+            <li>Keep fire extinguishers handy</li>
+          </ul>
+        </section>
+      </article>
+    </section>
+  </main>
+
+  <!-- Sidebar with contact info and citizen form -->
+  <aside>
+    <h2>City Contact Info</h2>
+    <ul>
+      <li>Emergency: 100</li>
+      <li>Fire: 101</li>
+      <li>Ambulance: 102</li>
+      <li>Nearest Shelter: Central Community Hall</li>
+    </ul>
+
+    <h3>Report a Local Issue</h3>
+    <form>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone"><br><br>
+
+      <label for="report">Describe the issue:</label><br>
+      <textarea id="report" name="report" rows="5" cols="30"></textarea><br><br>
+
+      <input type="checkbox" id="callback" name="callback">
+      <label for="callback">Request a follow-up call</label><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </aside>
+
+  <!-- Footer with logo, date, and bulletin download -->
+  <footer>
+    <p><strong>Metroville City Council</strong></p>
+    <p>Date: <time datetime="2025-07-17">July 17, 2025</time></p>
+    <p><a href="alert_bulletin.pdf" download>Download Printable Bulletin (PDF)</a></p>
+  </footer>
+
+</body>
+</html>
